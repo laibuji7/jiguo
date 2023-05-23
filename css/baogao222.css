@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #cecfcf;
+  box-shadow: 0 0 5px #cecfcf inset;
+}
+nav ul {
+  width: 60%;
+  height: 65px;
+  list-style: none;
+  margin: auto;
+}
+nav ul li {
+  float: left;
+  margin-right: 60px;
+  line-height: 65px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #454343;
+}
+nav ul li a:hover {
+  color: red;
+}
+nav ul li:nth-of-type(1) img {
+  width: 120px;
+  margin-top: 6px;
+  transition: all 0.5s ease;
+}
+nav ul li:nth-of-type(1) img:hover {
+  opacity: 0.7;
+}
+nav ul li:nth-of-type(6) a {
+  color: red;
+}
+nav ul li:nth-of-type(7) {
+  margin-left: 180px;
+}
+nav ul li:nth-of-type(7) img {
+  float: left;
+  margin-top: 20px;
+}
+nav ul li:nth-of-type(7) a {
+  margin-left: 20px;
+  color: red;
+  padding: 5px 7px;
+  border: 1px solid red;
+}
+nav ul li:nth-of-type(7) a:hover {
+  background-color: red;
+  color: white;
+}
+.dier {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 30px;
+  background-color: #ececec;
+}
+.dier h1 {
+  margin-left: 900px;
+  line-height: 150px;
+  font-weight: 400;
+  font-size: 40px;
+}
+.dier .zui {
+  width: 60%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+}
+.dier .zui a {
+  color: gray;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 35px;
+  display: inline-block;
+  height: 50px;
+  width: 160px;
+}
+.dier .zui .bian {
+  border-bottom: 5px solid red;
+  color: red;
+}
+.dan {
+  width: 40%;
+  height: 6500px;
+  margin-left: 420px;
+  border-radius: 10px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.dan li {
+  list-style: none;
+  float: left;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.dan li:hover {
+  animation: xixi 1s linear infinite alternate-reverse;
+}
+.dan li img {
+  width: 100%;
+  border-radius: 10px;
+}
+.dan li .shang {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  opacity: 0.8;
+  position: absolute;
+  top: 299px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 0px 0px 10px 10px;
+}
+.dan li .shang p {
+  font-size: 20px;
+}
+.dan li .shang span {
+  position: absolute;
+  font-size: 12px;
+}
+.dan li .shang span:nth-of-type(1) {
+  left: 50px;
+  top: 80px;
+}
+.dan li .shang span:nth-of-type(2) {
+  left: 90px;
+  top: 80px;
+}
+.dan li .xia {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #ededed;
+  line-height: 50px;
+  text-align: center;
+  color: #bbb9b9;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+@keyframes xixi {
+  100% {
+    opacity: 0.5;
+  }
+}
+.dianji {
+  width: 100%;
+  height: 50px;
+}
+.dianji p:nth-of-type(1) {
+  line-height: 50px;
+  text-decoration: none;
+  position: absolute;
+  left: 48%;
+  color: #FD538E;
+  display: inline-block;
+  padding-left: 18px;
+  background: url(img/more.png) no-repeat left center;
+}
+.dianji p:nth-of-type(2) {
+  line-height: 50px;
+  text-decoration: none;
+  position: absolute;
+  left: 48%;
+  color: #FD538E;
+  display: inline-block;
+  padding-left: 18px;
+  background: url(img/loading-icon.gif) no-repeat left center;
+  display: none;
+}
+.dianji p:hover {
+  cursor: pointer;
+}
+.right {
+  width: 15%;
+  height: 1000px;
+  position: absolute;
+  left: 65%;
+  top: 300px;
+}
+.right > p {
+  font-size: 27px;
+  font-weight: 400;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+.right > span {
+  display: block;
+  font-size: 50px;
+  color: #FE5341;
+  margin-bottom: 25px;
+}
+.right > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #FE5341;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.right img {
+  width: 100%;
+}
+.right ul {
+  margin-bottom: 25px;
+  list-style: none;
+}
+.right ul > li > p {
+  font-weight: 600;
+  color: #505050;
+  margin: 10px 0px;
+}
+.right ul > li > span {
+  color: gray;
+}
+.dibu {
+  width: 100%;
+  height: 400px;
+  background-color: #505050;
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+}
+.dibu .zhong {
+  width: 65%;
+  height: 300px;
+  margin: auto;
+  margin-top: 60px;
+}
+.dibu dl {
+  float: left;
+  margin-right: 30px;
+}
+.dibu dl dt {
+  color: white;
+  font-size: 20px;
+}
+.dibu dl dd {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: gray;
+}
+.dibu dl dd a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 10px;
+}
+.dibu span {
+  margin-left: 47%;
+  font-size: 12px;
+  color: gray;
+}

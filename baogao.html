@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>导购</title>
-    <link rel="stylesheet" href="./css/daogou.css">
+    <title>报告</title>
+    <link rel="stylesheet" href="./css/baogao.css">
 </head>
 
 <body>
@@ -31,86 +31,74 @@
     </nav>
 
 
-
-
     <div class="dier">
-        <h1>导购清单</h1>
+        <h1>体验报告</h1>
         <div class="zui">
             <a href="#" class="bian">最新</a>
-            <a href="./daogou222.html">最热</a>
+            <a href="./baogao222.html">最热</a>
         </div>
     </div>
 
-    <ul class="uu">
+    <ul class="dan">
         <li>
-            <a href="./tiyanshi">
-                <img src="./css/img/g1.jpg" alt="">
-                <div class="info">
-                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                    <span>3</span>
-                    <span>3</span>
-                </div>
-                <div class="die2"></div>
-                <div class="die3"></div>
+            <img src="./css/img/bg1.jpg" alt="">
+            <div class="shang">
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <span>苏苏</span>
+                <span>2016-01-25</span>
+                <span>1</span>
+                <span>2</span>
+            </div>
 
-            </a>
+            <div class="xia">
+                关于格林威特空气净化器还有 4 篇报告，点击查看
+            </div>
         </li>
         <li>
-            <a href="./tiyanshi">
-                <img src="./css/img/g1.jpg" alt="">
-                <div class="info">
-                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                    <span>3</span>
-                    <span>3</span>
-                </div>
-            </a>
+            <img src="./css/img/bg1.jpg" alt="">
+            <div class="shang">
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <span>苏苏</span>
+                <span>2016-01-25</span>
+                <span>1</span>
+                <span>2</span>
+            </div>
+
+            <div class="xia">
+                关于格林威特空气净化器还有 4 篇报告，点击查看
+            </div>
         </li>
-        <li>
-            <a href="./tiyanshi">
-                <img src="./css/img/g1.jpg" alt="">
-                <div class="info">
-                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                    <span>3</span>
-                    <span>3</span>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="./tiyanshi">
-                <img src="./css/img/g1.jpg" alt="">
-                <div class="info">
-                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                    <span>3</span>
-                    <span>3</span>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="./tiyanshi">
-                <img src="./css/img/g1.jpg" alt="">
-                <div class="info">
-                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                    <span>3</span>
-                    <span>3</span>
-                </div>
-            </a>
-        </li>
-
-
-
-
-
     </ul>
+    <div class="right">
+        <p>极果体验师</p>
+        <img src="./css/img/tiyanImg.jpg" alt="">
+        <ul>
+            <li>
+                <p>福利</p>
+                <span>第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软</span>
 
-
+            </li>
+            <li>
+                <p>要求</p>
+                <span>是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。</span>
+            </li>
+            <li>
+                <p>申请</p>
+                <span>
+                    1. 关注极果公众号：jguojguo
+                    （或扫描下方二维码）
+                    2. 在公众号内回复：体验师
+                </span>
+            </li>
+        </ul>
+        <p>关注我们</p>
+        <img src="./css/img/myCode.jpg" alt="">
+    </div>
 
     <div class="dianji">
         <p>点击加载更多</p>
         <p>正在加载中</p>
     </div>
-
-
-
     <!-- 底部 -->
 
     <div class="dibu">
@@ -207,9 +195,9 @@
 
 
 <script>
-    var uu = document.getElementsByClassName('uu')[0]
+    var uu = document.getElementsByClassName('dan')[0]
     var ajax1 = new XMLHttpRequest() || new ActivesXObject('Microsoft.XMLHTTP')
-    ajax1.open('get', 'http://127.0.0.1:3000/guid/new')
+    ajax1.open('get', 'http://127.0.0.1:3000/report/new')
     ajax1.send()
     ajax1.onreadystatechange = function () {
         if (ajax1.readyState == 4) {
@@ -219,20 +207,18 @@
                 for (var i = 0; i < zhanshi.length; i++) {
                     str += `
                     <li>
-            <a href="./tiyanshi.html">
-                <img src=${zhanshi[i].img} alt="">
-                <div class="info">
-                    <p>${zhanshi[i].text}</p>
-                    <span>${zhanshi[i].like}</span>
-                    <span>${zhanshi[i].words}</span>
-                </div>
-                 <div class="die2"></div>
-                <div class="die3"></div>
-            </a>
-        </li>
-
-        
+            <img src=${zhanshi[i].img} alt="">
+            <div class="shang">
+                <p>${zhanshi[i].text}</p>
+                <span>${zhanshi[i].uName}</span>
+                <span>${zhanshi[i].endTime}</span>
+            
               
+            </div>
+            <div class="xia">
+                关于格林威特空气净化器还有 4 篇报告，点击查看
+            </div>
+        </li>
                 `
                 }
                 uu.innerHTML = str

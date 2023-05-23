@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>导购</title>
-    <link rel="stylesheet" href="./css/daogou.css">
+    <link rel="stylesheet" href="./css/daogou222.css">
 </head>
 
 <body>
@@ -36,8 +36,8 @@
     <div class="dier">
         <h1>导购清单</h1>
         <div class="zui">
-            <a href="#" class="bian">最新</a>
-            <a href="./daogou222.html">最热</a>
+            <a href="./daogou.html">最新</a>
+            <a href="#" class="bian">最热</a>
         </div>
     </div>
 
@@ -209,7 +209,7 @@
 <script>
     var uu = document.getElementsByClassName('uu')[0]
     var ajax1 = new XMLHttpRequest() || new ActivesXObject('Microsoft.XMLHTTP')
-    ajax1.open('get', 'http://127.0.0.1:3000/guid/new')
+    ajax1.open('get', 'http://127.0.0.1:3000/guid/hot')
     ajax1.send()
     ajax1.onreadystatechange = function () {
         if (ajax1.readyState == 4) {

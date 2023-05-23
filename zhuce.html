@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>导购</title>
-    <link rel="stylesheet" href="./css/daogou.css">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/zhuce.css">
 </head>
 
 <body>
@@ -33,86 +33,39 @@
 
 
 
-    <div class="dier">
-        <h1>导购清单</h1>
-        <div class="zui">
-            <a href="#" class="bian">最新</a>
-            <a href="./daogou222.html">最热</a>
+
+    <div class="box">
+
+        <div class="biao">
+            <h2>注册极果</h2>
+            <div class="ti">请填写此段。</div>
+            <p>
+                <input type="text" placeholder="请输入登录手机号">
+
+            </p>
+            <p>
+                <input type="text" placeholder="请输入图片效验码">
+                <img src="./css/img/imgCode.jpg" alt="">
+            </p>
+
+            <p>
+                <input type="text" placeholder="请输入4位数字验证码">
+                <button class="btn1">获取验证码</button>
+            </p>
+            <p>
+                <input type="text" placeholder="请输入用户名">
+            </p>
+            <p>
+                <input type="text" placeholder="请输入新密码">
+            </p>
+            <p>
+                <input type="text" placeholder="确认新密码">
+            </p>
+            <p>
+                <button class="btn2">立即注册</button>
+            </p>
         </div>
     </div>
-
-    <ul class="uu">
-        <li>
-            <a href="./tiyanshi">
-                <img src="./css/img/g1.jpg" alt="">
-                <div class="info">
-                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                    <span>3</span>
-                    <span>3</span>
-                </div>
-                <div class="die2"></div>
-                <div class="die3"></div>
-
-            </a>
-        </li>
-        <li>
-            <a href="./tiyanshi">
-                <img src="./css/img/g1.jpg" alt="">
-                <div class="info">
-                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                    <span>3</span>
-                    <span>3</span>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="./tiyanshi">
-                <img src="./css/img/g1.jpg" alt="">
-                <div class="info">
-                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                    <span>3</span>
-                    <span>3</span>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="./tiyanshi">
-                <img src="./css/img/g1.jpg" alt="">
-                <div class="info">
-                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                    <span>3</span>
-                    <span>3</span>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="./tiyanshi">
-                <img src="./css/img/g1.jpg" alt="">
-                <div class="info">
-                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                    <span>3</span>
-                    <span>3</span>
-                </div>
-            </a>
-        </li>
-
-
-
-
-
-    </ul>
-
-
-
-    <div class="dianji">
-        <p>点击加载更多</p>
-        <p>正在加载中</p>
-    </div>
-
-
-
-    <!-- 底部 -->
-
     <div class="dibu">
         <div class="zhong">
             <dl><img src="./css/img/code.png" alt=""></dl>
@@ -207,45 +160,35 @@
 
 
 <script>
-    var uu = document.getElementsByClassName('uu')[0]
-    var ajax1 = new XMLHttpRequest() || new ActivesXObject('Microsoft.XMLHTTP')
-    ajax1.open('get', 'http://127.0.0.1:3000/guid/new')
-    ajax1.send()
-    ajax1.onreadystatechange = function () {
-        if (ajax1.readyState == 4) {
-            if (ajax1.status == 200) {
-                var zhanshi = JSON.parse(ajax1.responseText)
-                var str = ''
-                for (var i = 0; i < zhanshi.length; i++) {
-                    str += `
-                    <li>
-            <a href="./tiyanshi.html">
-                <img src=${zhanshi[i].img} alt="">
-                <div class="info">
-                    <p>${zhanshi[i].text}</p>
-                    <span>${zhanshi[i].like}</span>
-                    <span>${zhanshi[i].words}</span>
-                </div>
-                 <div class="die2"></div>
-                <div class="die3"></div>
-            </a>
-        </li>
-
-        
-              
-                `
-                }
-                uu.innerHTML = str
+    var inps = document.getElementsByTagName('input')
+    var bt1 = document.getElementsByClassName('btn1')[0]
+    var bt2 = document.getElementsByClassName('btn2')[0]
+    var ti = document.getElementsByClassName('ti')
+    bt1.onclick = function () {
+        var i = 60
+        var timer = setInterval(function () {
+            i--;
+            bt1.innerHTML = i + '秒后重更新发送';
+            if (i == 0) {
+                bt1.innerHTML = '获取验证码'
+                clearInterval(timer);
             }
-        }
+        }, 500);
     }
-    var xiaoshou = document.getElementsByClassName('dianji')[0].children[0]
-
-    var quan = document.getElementsByClassName('dianji')[0].children[1]
-
-    xiaoshou.onclick = function () {
-        xiaoshou.style.display = 'none'
-        quan.style.display = 'block'
+    bt2.onclick = function () {
+        if (/^1[34578][0-9]{9}$/.test(inps[0].value)) {
+            if (inps[1].value == 'r2b7') {
+                if (inps[4].value == inps[5].value) {
+                    window.location.href = 'zhuce.html'
+                } else {
+                    alert('两次输入的密码不一样')
+                }
+            } else {
+                alert('图片验证错误')
+            }
+        } else {
+            alert('请输入正确的手机号')
+        }
     }
 
 
