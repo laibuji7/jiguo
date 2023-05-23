@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  width: 100%;
+  height: 78px;
+  border-bottom: 1px solid #cecfcf;
+  box-shadow: 0 0 5px #cecfcf inset;
+}
+nav ul {
+  width: 70%;
+  height: 65px;
+  list-style: none;
+  margin: auto;
+}
+nav ul li {
+  float: left;
+  margin-right: 60px;
+  line-height: 65px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #454343;
+}
+nav ul li a:hover {
+  color: red;
+}
+nav ul li:nth-of-type(1) img {
+  width: 120px;
+  margin-top: 6px;
+  transition: all 0.5s ease;
+}
+nav ul li:nth-of-type(1) img:hover {
+  opacity: 0.7;
+}
+nav ul li:nth-of-type(3) a {
+  color: red;
+}
+nav ul li:nth-of-type(7) {
+  margin-left: 180px;
+}
+nav ul li:nth-of-type(7) img {
+  float: left;
+  margin-top: 20px;
+}
+nav ul li:nth-of-type(7) a {
+  margin-left: 20px;
+  color: red;
+  padding: 5px 7px;
+  border: 1px solid red;
+}
+nav ul li:nth-of-type(7) a:hover {
+  background-color: red;
+  color: white;
+}
+main .ku {
+  width: 50%;
+  font-size: 40px;
+  font-weight: 500;
+  height: 150px;
+  line-height: 150px;
+  margin-left: 650px;
+}
+.da {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+.da a {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 20px;
+  color: #cecfcf;
+  width: 170px;
+}
+.da a:nth-of-type(3) {
+  color: #f25050;
+  border-bottom: 4px solid #f25050;
+}
+.baogao {
+  width: 100%;
+  overflow: hidden;
+  background-color: #F7F7F7;
+}
+@keyframes shan {
+  0% {
+    opacity: 0.5;
+  }
+}
+.baogao ul {
+  width: 60%;
+  margin: auto;
+}
+.baogao ul li {
+  list-style: none;
+  margin-top: 20px;
+  padding: 10px 0px;
+  background-color: #fefefe;
+  border: 1px solid #e0dede;
+  margin-bottom: 30px;
+}
+.baogao ul li .shang {
+  border-bottom: 1px dotted #b8b5b5;
+}
+.baogao ul li .shang h2 {
+  font-size: 15px;
+  margin: 25px 0px;
+  padding-left: 30px;
+  border-left: 4px solid #c82929;
+}
+.baogao ul li .shang div {
+  width: 16%;
+  margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #cecfcf;
+}
+.baogao ul li .shang div:hover {
+  color: #e26767;
+}
+.baogao ul li .xia div {
+  width: 16%;
+  height: 35px;
+  margin-top: 10px;
+  line-height: 35px;
+  text-align: center;
+  display: inline-block;
+  color: #cecfcf;
+}
+.baogao ul li .xia div:hover {
+  color: #e26767;
+}
+.dibu {
+  width: 100%;
+  height: 400px;
+  background-color: #505050;
+  overflow: hidden;
+}
+.dibu .zhong {
+  width: 75%;
+  height: 300px;
+  margin: auto;
+  margin-top: 60px;
+}
+.dibu dl {
+  float: left;
+  margin-right: 30px;
+}
+.dibu dl dt {
+  color: white;
+  font-size: 20px;
+}
+.dibu dl dd {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: gray;
+}
+.dibu dl dd a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 10px;
+}
+.dibu span {
+  margin-left: 47%;
+  font-size: 12px;
+  color: gray;
+}

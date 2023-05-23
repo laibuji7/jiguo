@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>试用</title>
+    <link rel="stylesheet" href="./css/shenqingzhong.css">
+</head>
+
+<body>
+    <div class="box">
+        <!-- 导航栏------------------------ -->
+        <nav>
+            <ul>
+                <li>
+                    <img src="./css/img/logonew.png" alt="">
+                </li>
+                <li>
+                    <a href="./shouye.html ">首页</a>
+                </li>
+                <li>
+                    <a href="./kuwanzuixin.html">酷玩</a>
+                </li>
+                <li>
+                    <a href="./daogou.html">导购</a>
+                </li>
+                <li>
+                    <a href="./shiyong.html">试用</a>
+                </li>
+                <li>
+                    <a a href="./baogao.html">报告</a>
+                </li>
+                <li>
+                    <img src="./css/img/search.png" alt="">
+                    <a href="./zhuce.html">注册</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 免费试用----------------- -->
+        <section>
+            <h2>免费试用</h2>
+            <div class="title">
+                <a href="./shiyong.html">大众试用</a>
+                <a href="./tiyanshi.html">体验师专享</a>
+
+            </div>
+        </section>
+        <div class="section2">
+            <a href="./shiyong.html">全部</a>
+            <a href="./shenqingzhong.html">申请中</a>
+            <a href="./shiyongzhong.html">试用中</a>
+            <a href="./yijieshu.html">已结束</a>
+        </div>
+        <div class="section3">
+            <div class="centenr">
+            </div>
+            <div class="xiala">
+                <img src="./css/img/more.png" alt="">
+                <img src="./css/img/loading-icon.gif" alt="">
+                <a href="javascript:void(0)">向下拉加载更多</a>
+                <a href="javascript:void(0)">正在加载中</a>
+            </div>
+
+        </div>
+
+
+
+        <!-- 底部---------------------------- -->
+        <div class=" dibu">
+            <div class="zhong">
+                <dl><img src="./css/img/code.png" alt=""></dl>
+                <dl>
+                    <dt><img src="./css/img/logoImg.jpg" alt=""></dt>
+                    <br>
+                    <dd>全球酷玩试用导购平台
+                        <br>
+                        酷·新奇·好玩·品质
+                    </dd>
+                    <br>
+
+                    <dd>微信添加“JguoJguo”
+                        <br>
+                        获取我们的服务。
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>免费试用</dt>
+                    <br>
+                    <dd><a href="#">试用流程</a></dd>
+                    <dd><a href="#">如何提高成功率</a></dd>
+                </dl>
+                <dl>
+                    <dt>友情链接</dt>
+                    <br>
+                    <dd>
+                        <a href="#">智东西</a>
+                        <a href="#">WEIBUSI</a>
+                    </dd>
+                    <dd>
+                        <a href="#">搜狐IT</a>
+                        <a href="#">腾讯科技</a>
+                    </dd>
+                    <dd>
+                        <a href="#">搜狐数码</a>
+                        <a href="#">凤凰科技</a>
+                    </dd>
+                    <dd>
+                        <a href="#">凤凰数码</a>
+                        <a href="#">PConline</a>
+                    </dd>
+                    <dd>
+                        <a href="#">泡泡网</a>
+                        <a href="#">3W咖啡</a>
+                    </dd>
+                    <dd>
+                        <a href="#">ZUK社区</a>
+                        <a href="#">亿觅emie</a>
+                    </dd>
+                    <dd>
+                        <a href="#">极客公园</a>
+                        <a href="#">易迅易启玩</a>
+                    </dd>
+                    <dd>
+                        <a href="#">果库</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>购买攻略</dt>
+                    <br>
+                    <dd>
+                        <a href="#">美亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">日亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">海淘转运攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="#">kickstarter 众筹购买攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="#">indiegogo 众筹购买攻略</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>厂商合作</dt>
+                    <br>
+                    <dd><a href="./guanyu.html">关于极果</a></dd>
+                    <dd><a href="#">联系我们</a></dd>
+                    <dd><a href="#">商务合作：BD@jiguo.com</a></dd>
+                    <dd><a href="#">CEO邮箱：CEO@jiguo.com</a></dd>
+                </dl>
+            </div>
+            <span> 2016 极果版权所有</span>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+<script>
+    var uu = document.getElementsByClassName('centenr')[0]
+    var ajax1 = new XMLHttpRequest() || new ActivesXObject('Microsoft.XMLHTTP')
+    ajax1.open('get', 'http://127.0.0.1:3000/useing/public')
+    ajax1.send()
+    ajax1.onreadystatechange = function () {
+        if (ajax1.readyState == 4) {
+            if (ajax1.status == 200) {
+                var zhanshi = JSON.parse(ajax1.responseText)
+                var str = ''
+                for (var i = 0; i < zhanshi.length; i++) {
+                    str += `
+                    <a href="./chanpin.html">
+                    <span>${zhanshi[i].info_ty}</span>
+                    <img src="${zhanshi[i].img}" alt="">
+                    <div>
+                        <h3>${zhanshi[i].text}</h3>
+                        <p><span>${zhanshi[i].totalnum}</span><span>${zhanshi[i].num}台</span></p>
+                        <p><span>${zhanshi[i].apply}</span>
+                            申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </a>
+                    `;
+                }
+                uu.innerHTML = str
+            }
+        }
+    }
+
+
+    // ---------------下拉------------------------
+    var img2 = document.getElementsByTagName('img')[3]
+    var img1 = document.getElementsByTagName('img')[2]
+    var a2 = document.getElementsByClassName('xiala')[0].lastElementChild
+    var a1 = document.getElementsByClassName('xiala')[0].lastElementChild.previousElementSibling
+    var xiala = document.getElementsByClassName('xiala')[0]
+    xiala.onclick = function () {
+        img1.style.display = 'none'
+        img2.style.display = 'inline-block'
+        a1.style.display = 'none'
+        a2.style.display = 'inline-block'
+    }
+</script>

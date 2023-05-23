@@ -5,59 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>试用</title>
-    <link rel="stylesheet" href="../css/shiyongzhong.css">
+    <title>酷玩</title>
+    <link rel="stylesheet" href="./css/kuwanzuixin.css">
 </head>
 
 <body>
     <div class="box">
-        <!-- 导航栏------------------------ -->
         <nav>
             <ul>
-                <li><img src="../css/img/logonew.png" alt=""></li>
-                <li><a href="">首页</a></li>
-                <li><a href="">酷玩</a></li>
-                <li><a href="">导购</a></li>
-                <li><a href="../use/shiyong.html">试用</a></li>
-                <li><a href="">报告</a></li>
-                <li><img src="../css/img/search.png" alt=""><span>注册</span></li>
+                <li><img src="./css/img/logonew.png" alt=""></li>
+                <li><a href="./shouye.html">首页</a></li>
+                <li><a href="./kuwanzuixin.html">酷玩</a></li>
+                <li><a href="./daogou.html">导购</a></li>
+                <li><a href="./shiyong.html">试用</a></li>
+                <li><a href="./baogao.html">报告</a></li>
+                <li><img src="./css/img/search.png" alt=""><a href="./zhuce.html">注册</a></li>
+
+
+
+
             </ul>
+
         </nav>
-        <!-- 免费试用----------------- -->
-        <section>
-            <h2>免费试用</h2>
-            <div class="title">
-                <a href="../use/shiyong.html">大众试用</a>
-                <a href="../use/tiyanshi.html">体验师专享</a>
 
-            </div>
-        </section>
-        <div class="section2">
-            <a href="./shiyong.html">全部</a>
-            <a href="./shenqingzhong.html">申请中</a>
-            <a href="./shiyongzhong.html">试用中</a>
-            <a href="./yijieshu.html">已结束</a>
+        <main>
+            <div class="ku">发现酷玩</div>
+
+
+        </main>
+
+        <div class="da">
+            <a href="javascript:void(0);">最新</a>
+            <a href="./kuwanzuire.html">最热</a>
+            <a href="./kuwanpinlei.html">品类</a>
+
         </div>
-        <div class="section3">
-            <div class="centenr">
-            </div>
-            <div class="xiala">
-                <img src="../css/img/more.png" alt="">
-                <img src="../css/img/loading-icon.gif" alt="">
-                <a href="javascript:void(0)">向下拉加载更多</a>
-                <a href="javascript:void(0)">正在加载中</a>
-            </div>
+        <div class="baogao">
+            <ul class="ajia">
+
+
+            </ul>
 
         </div>
 
+        <div class="play">
+            <a href="javascript:void(0);" class="geng">
+                <img src="file:///F:/%E6%9E%81%E6%9E%9C%E9%A1%B9%E7%9B%AE%E6%9C%80%E6%96%B0%E7%89%88/%E7%A4%BA%E4%BE%8B01%EF%BC%9A%E6%9E%81%E6%9E%9C%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/css/img/more.png"
+                    alt="">点击查看更多</a>
+        </div>
 
 
-        <!-- 底部---------------------------- -->
-        <div class=" dibu">
+
+
+
+        <div class="dibu">
             <div class="zhong">
-                <dl><img src="../css/img/code.png" alt=""></dl>
+                <dl><img src="./css/img/code.png" alt=""></dl>
                 <dl>
-                    <dt><img src="../css/img/logoImg.jpg" alt=""></dt>
+                    <dt><img src="./css/img/logoImg.jpg" alt=""></dt>
                     <br>
                     <dd>全球酷玩试用导购平台
                         <br>
@@ -144,50 +149,60 @@
 
 
     </div>
+
 </body>
 
+
 </html>
+
+
+
+
 <script>
-    var uu = document.getElementsByClassName('centenr')[0]
+
+    var geng = document.getElementsByClassName('geng')[0];
+    geng.onclick = function () {
+
+        geng.innerHTML = `<img  src="file:///F:/%E6%9E%81%E6%9E%9C%E9%A1%B9%E7%9B%AE%E6%9C%80%E6%96%B0%E7%89%88/%E7%A4%BA%E4%BE%8B01%EF%BC%9A%E6%9E%81%E6%9E%9C%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/css/img/loading-icon.gif"
+                    alt="">正在加载中 `
+    }
+
+
+
+    var uu = document.getElementsByClassName('ajia')[0]
     var ajax1 = new XMLHttpRequest() || new ActivesXObject('Microsoft.XMLHTTP')
-    ajax1.open('get', 'http://127.0.0.1:3000/useing/public')
+    ajax1.open('get', 'http://127.0.0.1:3000/play/new')
     ajax1.send()
     ajax1.onreadystatechange = function () {
         if (ajax1.readyState == 4) {
             if (ajax1.status == 200) {
                 var zhanshi = JSON.parse(ajax1.responseText)
                 var str = ''
-                for (var i = 0; i < zhanshi.length; i++) {
-                    str += `
-                    <a href="./chanpin.html">
-                    <span>${zhanshi[i].info_ty}</span>
-                    <img src="${zhanshi[i].img}" alt="">
-                    <div>
-                        <h3>${zhanshi[i].text}</h3>
-                        <p><span>${zhanshi[i].totalnum}</span><span>${zhanshi[i].num}台</span></p>
-                        <p><span>${zhanshi[i].apply}</span>
-                            申请</p>
-                        <p>剩余时间2天</p>
-                    </div>
-                </a>
-                    `;
+                for (var i of zhanshi) {
+                    for (var d of i) {
+                        str += `
+                    <li>
+            <a href="./tiyanshi.html">
+                <img src=${d.img} alt="">
+                <div class="info">
+                    <p>${d.text}</p>
+                    <span>${d.like}</span>
+                    <span>${d.words}</span>
+                    <span>${d.price}</span>
+                </div>
+                
+            </a>
+        </li>
+
+        
+              
+                `
+                    }
+
+
                 }
                 uu.innerHTML = str
             }
         }
-    }
-
-
-    // ---------------下拉------------------------
-    var img2 = document.getElementsByTagName('img')[3]
-    var img1 = document.getElementsByTagName('img')[2]
-    var a2 = document.getElementsByClassName('xiala')[0].lastElementChild
-    var a1 = document.getElementsByClassName('xiala')[0].lastElementChild.previousElementSibling
-    var xiala = document.getElementsByClassName('xiala')[0]
-    xiala.onclick = function () {
-        img1.style.display = 'none'
-        img2.style.display = 'inline-block'
-        a1.style.display = 'none'
-        a2.style.display = 'inline-block'
     }
 </script>
