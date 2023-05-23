@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>试用</title>
-    <link rel="stylesheet" href="../css/tiyanshi.css">
+    <link rel="stylesheet" href="./css/shiyong.css">
 </head>
 
 <body>
@@ -14,26 +14,26 @@
         <!-- 导航栏------------------------ -->
         <nav>
             <ul>
-                <li><img src="../css/img/logonew.png" alt=""></li>
-                <li><a href="">首页</a></li>
-                <li><a href="">酷玩</a></li>
-                <li><a href="">导购</a></li>
-                <li><a href="../use/shiyong.html">试用</a></li>
-                <li><a href="">报告</a></li>
-                <li><img src="../css/img/search.png" alt=""><span>注册</span></li>
+                <li><img src="./css/img/logonew.png" alt=""></li>
+                <li><a href="./shouye.html">首页</a></li>
+                <li><a href="./kuwan.html">酷玩</a></li>
+                <li><a href="./daogou.html">导购</a></li>
+                <li><a href="./shiyong.html">试用</a></li>
+                <li><a href="./baogao.html">报告</a></li>
+                <li><img src="./css/img/search.png" alt=""><span>注册</span></li>
             </ul>
         </nav>
         <!-- 免费试用----------------- -->
         <section>
             <h2>免费试用</h2>
             <div class="title">
-                <a href="../use/shiyong.html">大众试用</a>
-                <a href="../use/tiyanshi.html">体验师专享</a>
+                <a href="./shiyong.html">大众试用</a>
+                <a href="./tiyanshi.html">体验师专享</a>
 
             </div>
         </section>
         <div class="section2">
-            <a href="./tiyanshi.html">全部</a>
+            <a href="./shiyong.html">全部</a>
             <a href="./shenqingzhong.html">申请中</a>
             <a href="./shiyongzhong.html">试用中</a>
             <a href="./yijieshu.html">已结束</a>
@@ -42,8 +42,8 @@
             <div class="centenr">
             </div>
             <div class="xiala">
-                <img src="../css/img/more.png" alt="">
-                <img src="../css/img/loading-icon.gif" alt="">
+                <img src="./css/img/more.png" alt="">
+                <img src="./css/img/loading-icon.gif" alt="">
                 <a href="javascript:void(0)">向下拉加载更多</a>
                 <a href="javascript:void(0)">正在加载中</a>
             </div>
@@ -55,9 +55,9 @@
         <!-- 底部---------------------------- -->
         <div class=" dibu">
             <div class="zhong">
-                <dl><img src="../css/img/code.png" alt=""></dl>
+                <dl><img src="./css/img/code.png" alt=""></dl>
                 <dl>
-                    <dt><img src="../css/img/logoImg.jpg" alt=""></dt>
+                    <dt><img src="./css/img/logoImg.jpg" alt=""></dt>
                     <br>
                     <dd>全球酷玩试用导购平台
                         <br>
@@ -150,7 +150,7 @@
 <script>
     var uu = document.getElementsByClassName('centenr')[0]
     var ajax1 = new XMLHttpRequest() || new ActivesXObject('Microsoft.XMLHTTP')
-    ajax1.open('get', 'http://127.0.0.1:3000/useing/public')
+    ajax1.open('get', 'http://127.0.0.1:3000/useing/master')
     ajax1.send()
     ajax1.onreadystatechange = function () {
         if (ajax1.readyState == 4) {
