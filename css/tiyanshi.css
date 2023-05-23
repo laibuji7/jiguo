@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #cecfcf;
+  box-shadow: 0 0 5px #cecfcf inset;
+}
+nav ul {
+  width: 54%;
+  height: 65px;
+  list-style: none;
+  margin: auto;
+}
+nav ul li {
+  float: left;
+  margin-right: 60px;
+  line-height: 65px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #454343;
+}
+nav ul li a:hover {
+  color: red;
+}
+nav ul li:nth-of-type(1) img {
+  width: 120px;
+  margin-top: 6px;
+  transition: all 0.5s ease;
+}
+nav ul li:nth-of-type(1) img:hover {
+  opacity: 0.7;
+}
+nav ul li:nth-of-type(5) a {
+  color: red;
+}
+nav ul li:nth-of-type(7) {
+  margin-left: 180px;
+}
+nav ul li:nth-of-type(7) img {
+  float: left;
+  margin-top: 20px;
+}
+nav ul li:nth-of-type(7) span {
+  margin-left: 20px;
+  color: red;
+  padding: 5px 7px;
+  border: 1px solid red;
+}
+nav ul li:nth-of-type(7) span:hover {
+  background-color: red;
+  color: white;
+}
+section {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+section h2 {
+  text-align: center;
+  padding: 30px 0px;
+  font-weight: 400;
+  display: block;
+  font-size: 50px;
+}
+section .title {
+  text-align: center;
+}
+section .title a {
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  font-size: 25px;
+  margin: 0 50px;
+}
+section .title a:nth-of-type(2) {
+  color: #fe5431;
+  border-bottom: 5px solid #fe5431;
+  padding-bottom: 20px;
+}
+.section2 {
+  border-top: 1px solid #cecfcf;
+  text-align: center;
+}
+.section2 a {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: gray;
+  margin: 20px 0px;
+  margin-right: 70px;
+}
+.section2 a:nth-of-type(1) {
+  color: #474747;
+  font-weight: 600;
+}
+.section3 {
+  background-color: #F7F7F7;
+  padding: 20px 0px;
+}
+.section3 .centenr {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+.section3 .centenr > a:hover {
+  opacity: 0.6;
+}
+.section3 .centenr a {
+  text-decoration: none;
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 274.86px;
+  margin-left: 45px;
+  border-radius: 10px;
+  color: #4c4949;
+  border: 1px solid #9b9898;
+  margin-bottom: 35px;
+  transition: all 1s;
+}
+.section3 .centenr a #js {
+  background-color: #F8D29A;
+  color: #5e5d5c;
+}
+.section3 .centenr a div {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.section3 .centenr a div h3 {
+  width: 100%;
+  height: 70px;
+  font-size: 16px;
+  margin-top: 7px;
+}
+.section3 .centenr a div > p:nth-of-type(1) {
+  font-size: 12px;
+}
+.section3 .centenr a div > p:nth-of-type(1) span {
+  padding: 3px 6px;
+  border: 1px solid red;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.section3 .centenr a div > p:nth-of-type(2) {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.section3 .centenr a div > p:nth-of-type(2) span {
+  color: #FE5341;
+}
+.section3 .centenr a div > p:nth-of-type(3) {
+  color: gray;
+}
+.section3 .centenr a > span:nth-of-type(1) {
+  position: absolute;
+  font-size: 12px;
+  top: 0px;
+  color: white;
+  right: 0px;
+  background-color: #FE5341;
+  padding: 3px 7px;
+  border-radius: 0px 10px 0px 10px;
+}
+.section3 .centenr a img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.section3 .xiala {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.section3 .xiala img:nth-of-type(2) {
+  display: none;
+}
+.section3 .xiala a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #FE5341;
+}
+.section3 .xiala a:nth-of-type(2) {
+  display: none;
+}
+.dibu {
+  width: 100%;
+  height: 400px;
+  background-color: #505050;
+  overflow: hidden;
+}
+.dibu .zhong {
+  width: 65%;
+  height: 300px;
+  margin: auto;
+  margin-top: 60px;
+}
+.dibu dl {
+  float: left;
+  margin-right: 30px;
+}
+.dibu dl dt {
+  color: white;
+  font-size: 20px;
+}
+.dibu dl dd {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: gray;
+}
+.dibu dl dd a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 10px;
+}
+.dibu span {
+  margin-left: 47%;
+  font-size: 12px;
+  color: gray;
+}
