@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  width: 100%;
+  height: 78px;
+  border-bottom: 1px solid #cecfcf;
+  box-shadow: 0 0 5px #cecfcf inset;
+}
+nav ul {
+  width: 70%;
+  height: 65px;
+  list-style: none;
+  margin: auto;
+}
+nav ul li {
+  float: left;
+  margin-right: 60px;
+  line-height: 65px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #454343;
+}
+nav ul li a:hover {
+  color: red;
+}
+nav ul li:nth-of-type(1) img {
+  width: 120px;
+  margin-top: 6px;
+  transition: all 0.5s ease;
+}
+nav ul li:nth-of-type(1) img:hover {
+  opacity: 0.7;
+}
+nav ul li:nth-of-type(7) {
+  margin-left: 180px;
+}
+nav ul li:nth-of-type(7) img {
+  float: left;
+  margin-top: 20px;
+}
+nav ul li:nth-of-type(7) a {
+  margin-left: 20px;
+  color: red;
+  padding: 5px 7px;
+  border: 1px solid red;
+}
+nav ul li:nth-of-type(7) a:hover {
+  background-color: red;
+  color: white;
+}
+.box .main2 {
+  height: 1200px;
+}
+.main {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  height: 1500px;
+  color: #575252;
+}
+.main span {
+  font-weight: 600;
+  display: block;
+  margin: 20px 0;
+}
+.main h6 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.main a {
+  text-decoration: none;
+  color: #302f2f;
+  font-weight: 600;
+  display: block;
+  margin: 10px 0px;
+}
+.main h2 {
+  height: 50px;
+  border-bottom: 1px solid #000;
+}
+.main .zuo {
+  width: 25%;
+  background-color: #F3F3F3;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.main .zuo p {
+  margin-left: 20px;
+}
+.main .you {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 65%;
+  float: left;
+  margin-left: 40px;
+  background-color: #F3F3F3;
+}
+.you2 {
+  height: 1000px;
+}
+.you2 p {
+  line-height: 30px;
+}
+.dibu {
+  width: 100%;
+  height: 400px;
+  background-color: #505050;
+  overflow: hidden;
+}
+.dibu .zhong {
+  width: 75%;
+  height: 300px;
+  margin: auto;
+  margin-top: 60px;
+}
+.dibu dl {
+  float: left;
+  margin-right: 30px;
+}
+.dibu dl dt {
+  color: white;
+  font-size: 20px;
+}
+.dibu dl dd {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: gray;
+}
+.dibu dl dd a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 10px;
+}
+.dibu span {
+  margin-left: 47%;
+  font-size: 12px;
+  color: gray;
+}

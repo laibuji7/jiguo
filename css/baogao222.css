@@ -89,7 +89,6 @@ nav ul li:nth-of-type(7) a:hover {
 }
 .dan {
   width: 40%;
-  height: 6500px;
   margin-left: 420px;
   border-radius: 10px;
   padding: 25px;
@@ -162,6 +161,7 @@ nav ul li:nth-of-type(7) a:hover {
   text-decoration: none;
   position: absolute;
   left: 48%;
+  bottom: -400px;
   color: #FD538E;
   display: inline-block;
   padding-left: 18px;
@@ -171,6 +171,7 @@ nav ul li:nth-of-type(7) a:hover {
   line-height: 50px;
   text-decoration: none;
   position: absolute;
+  bottom: -400px;
   left: 48%;
   color: #FD538E;
   display: inline-block;
@@ -228,7 +229,7 @@ nav ul li:nth-of-type(7) a:hover {
 }
 .dibu {
   width: 100%;
-  height: 400px;
+  height: 350px;
   background-color: #505050;
   overflow: hidden;
   position: relative;

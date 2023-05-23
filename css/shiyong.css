@@ -77,7 +77,7 @@ section .title a {
   font-size: 25px;
   margin: 0 50px;
 }
-section .title a:nth-of-type(2) {
+section .title a:nth-of-type(1) {
   color: #fe5431;
   border-bottom: 5px solid #fe5431;
   padding-bottom: 20px;
